@@ -38,18 +38,18 @@ public class Card {
     }
 
     public boolean isFace() {
-        return face;
+        return this.face;
     }
 
     public int getValue() {
-        return value;
+        return this.value;
     }
 
     public String getID() {
-        return id;
+        return this.id;
     }
 
     public String getSuit() {
-        return suit;
+        return this.suit;
     }
 }
