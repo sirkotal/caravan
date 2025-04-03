@@ -53,7 +53,10 @@ public class Caravan {
                     setAscending(!this.ascending);
                     return true;
                 case "jack":
-                    //TODO
+                    this.caravan.add(pos[0], card);
+                    this.caravan.remove(pos[0] - 1);
+                    return true;
+                    // Jack card is not entirely functional, only for testing purposes
                 case "king":
                     this.caravan.add(pos[0], card);
                     this.value += this.caravan.get(pos[0] - 1).getValue();
@@ -61,6 +64,12 @@ public class Caravan {
                     return true;
                 case "joker":
                     //TODO
+                    /*this.caravan.add(pos[0], card);
+                    String cardType = this.caravan.get(pos[0] - 1).getID();
+
+                    if (Objects.equals(cardType, "ace")) {
+
+                    }*/
             }
         }
         return false;
